@@ -1,0 +1,21 @@
+ul {
+  margin: 0px;
+  padding: 0px;
+  border: 1px solid #bbb;
+  border-top: none;
+  box-shadow: 1px 1px 3px rgba(212, 212, 212, 0.521);
+}
+
+li {
+  list-style: none;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+li:hover {
+  margin: 0px;
+}
+
+.active {
+  background-color: aqua;
+}

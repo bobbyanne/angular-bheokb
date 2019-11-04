@@ -1,0 +1,36 @@
+.dropdown-container {
+  position: relative;
+}
+
+.dropdown-button-container {
+  position: relative;
+}
+
+.dropdown-button-main {
+  background-color: #fff;
+  border: 1px solid lightblue;
+  outline: none;
+  text-align: left;
+  padding: 6px 8px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.dropdown-button-main:focus {
+  border: 1px solid rgb(90, 230, 218);
+}
+
+.dropdown-arrow-icon {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: rgb(121, 224, 216);
+  height: 100%;
+  width: 32px;
+  text-align: center;
+  line-height: 24px;
+}
+
+.icon-focus {
+  background-color: rgb(50, 221, 207);
+}

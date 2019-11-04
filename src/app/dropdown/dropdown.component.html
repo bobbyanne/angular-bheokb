@@ -1,0 +1,12 @@
+<div class="dropdown-container">
+  <div 
+  class="dropdown-button-container">
+    <button 
+    (mousedown)="dropdownList.handleListClick($event)"
+    class="dropdown-button-main" 
+    (focus)="focused=true" 
+    (focusout)="focused=false">{{selectedValue || placeholder}}</button>
+    <div [class.icon-focus]="focused" class="dropdown-arrow-icon">↓</div>
+  </div>
+  <app-dropdown-list (onSelect)="writeValue($event)" [options]="options"></app-dropdown-list>
+</div>

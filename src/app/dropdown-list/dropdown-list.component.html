@@ -1,0 +1,9 @@
+<ul *ngIf="isListOpen">
+  <li 
+  *ngFor="let option of options; index as i;"
+  (click)="handleSelectableOptionClick($event)"
+  (mouseover)="activeIndex = i"
+  [class.active]="activeIndex === i">
+    {{option}}
+  </li>
+</ul>

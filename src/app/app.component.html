@@ -1,0 +1,13 @@
+<form #form="ngForm">
+  <div style="width: 300px;">
+    <app-dropdown 
+    placeholder="Enter Your Favorite Food" 
+    name="favoriteFood" 
+    [(ngModel)]="model.favoriteFood"
+    [options]="foodOptions"></app-dropdown>
+  </div>
+
+  <pre>{{form.value | json}}</pre>
+
+  <button (click)="log()">Log</button>
+</form>
