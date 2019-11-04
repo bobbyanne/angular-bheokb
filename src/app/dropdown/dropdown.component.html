@@ -6,7 +6,9 @@
     class="dropdown-button-main" 
     (focus)="focused=true" 
     (focusout)="focused=false">{{selectedValue || placeholder}}</button>
-    <div [class.icon-focus]="focused" class="dropdown-arrow-icon"><img src="src/Vector 1.png" alt="test"></div>
+    <div [class.icon-focus]="focused" class="dropdown-arrow-icon">
+      
+    </div>
   </div>
   <app-dropdown-list (onSelect)="writeValue($event)" [options]="options"></app-dropdown-list>
 </div>
